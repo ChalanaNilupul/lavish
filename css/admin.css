@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(158, 103, 86);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success{
+    position:fixed;
+    right:50px;
+    top:80px;
+    width:30%;
+    z-index:5000;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    background-color: rgb(138, 255, 109);
+    transition: .5s;
+    pointer-events: none;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #ec5074;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+#orderbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    width: 20%;
+    height: 100vh;
+    background-color: #FBF0ED;
+    display: block;
+}
+
+.menu #name {
+    width: 100%;
+    height: 80px;
+}
+
+.menu div {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+
+.menu h1 {
+    text-align: center;
+}
+
+.menu button {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 20px;
+    
+}
+
+/* .menu button:hover {
+
+    padding-left: 10px;
+} */
+
+#menu1{
+    background-color: pink;
+}
+.name h1{
+    padding-top: 20px;
+}
+.section {
+    width: 80%;
+    height: 100vh;
+    position: relative;
+
+}
+.search{
+    width: 100%;
+    text-align: right;
+}
+.search input[type="text"]{
+    padding: 5px;
+    width: 30%;
+}
+.search button{
+    padding: 8px;
+    background-color: #ec5074;
+    border: 0px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.analytics{
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.Sec {
+    position: absolute;
+   
+    padding: 30px;
+    background-color: #ffffff;
+}
+.dashboard{
+    display: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.in{
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+.topBars{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+.oneSquare{
+    width: 200px;
+    height:90px;
+    background-color: #ec5074;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.one,.two,.three{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.div{
+display: flex;
+}
+.saletot{
+display: block;
+text-align: center;
+}
+.saletot p,h3{
+
+    color: #FBF0ED;
+}
+.saleicon{
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.two{
+
+}
+.three{
+
+}
+label{
+    margin-top: 20px;
+}
+
+.addBlogSec {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    overflow-y: auto;
+    
+}
+
+.addBlogSec form {
+    width: 80%;
+    padding-top: 20px;
+    color: black;
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.addBlogSec form label {
+    color: black;
+}
+
+.addBlogSec form input[type="text"] {
+
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: black;
+    height: 30px;
+    padding: 10px;
+}
+.addBlogSec form input[type="file"] {
+    margin-bottom: 20px;
+}
+.addBlogSec form textarea {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    height: 200px;
+    resize: none;
+    padding: 10px;
+}
+
+.addBlogSec form button {
+    float: right;
+    width: 100px;
+    height: 30px;
+    
+    padding: 5px;
+    background-color: #ec5074;
+    border: 0px;
+    cursor: pointer;
+    color: aliceblue;
+    
+}
+
+#usersSec {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+
+}
+
+.table table {
+    width: 100%;
+    color: black;
+}
+
+.table table th {
+    padding: 10px;
+    width: 100px;
+    color: black;
+    border: 1px solid black;
+    
+}
+
+.table table td {
+    padding: 10px;
+    width: 100px;
+    color: black;
+    text-align: center;
+}
+
+#testSec {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    overflow-y: auto;
+}
+#testSec button{
+    
+    
+    padding: 5px;
+    background-color: #ec5074;
+    border: 0px;
+    cursor: pointer;
+    color: aliceblue;
+}
+#logout{
+   
+    width: 100px;
+    height: 30px;
+    background-color: #ec5074;
+    border: 0px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 20px;
+    color: aliceblue;
+}

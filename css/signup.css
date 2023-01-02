@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #FBF0ED;
+}
+
+.signOut {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#error{
+    width: 100%;
+    background-color: #fc164c;
+    padding: 10px;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+.signIn {
+    width: 40%;
+}
+
+.signIn h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: rgb(83, 61, 54);
+}
+
+.signIn .div {
+    width: 100%;
+
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+
+}
+
+.signIn .div input[type='text'],
+input[type='email'],
+input[type='password'] {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1.5px solid rgb(83, 61, 54);
+    /* border-bottom: 2px solid rgb(83, 61, 54); */
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    z-index: 5;
+    background-color: transparent;
+    font-size: 18px;
+    color: rgb(158, 103, 86);
+    border-radius: 5px;
+}
+
+.signIn .div input:focus~span,
+.signIn .div input:valid~span {
+    top: -15px;
+
+}
+
+.signIn .div span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: .5s;
+    font-family: 'Poppins', sans-serif;
+    z-index: 7;
+    color: rgb(83, 61, 54);
+    pointer-events: none;
+    background-color: #FBF0ED;
+}
+
+.signIn p {
+    margin-top: 10px;
+}
+
+.signIn p a {
+    color: #E06C88;
+}
+
+.signIn button {
+    width: 100px;
+    height: 30px;
+    background-color: #E06C88;
+    border: none;
+    color: white;
+    cursor: pointer;
+    float: right; border-radius: 5px;
+}
+
+.signIn button:hover {
+    background-color: #ec5074;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:912px) {
+    .signIn {
+        width: 60%;
+    }
+}
+
+
+
+@media only screen and (max-width:540px) {
+    .signIn {
+        width: 80%;
+    }
+
+    .signIn p {
+        margin-top: 55px;
+        width: 100%;
+        text-align: center;
+    }
+}

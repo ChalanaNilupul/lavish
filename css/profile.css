@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(83, 61, 54);
+    font-size: 3vw;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #FBF0ED;
+}
+
+.profile {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.profilein {
+    width: 80%;
+    display: block;
+    justify-content: center;
+
+}
+
+.profilein .menu {
+    width: 100%;
+    display: flex;
+
+}
+
+.profilein .menu div {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid rgb(158, 103, 86);
+
+    display: flex;
+    color: rgb(83, 61, 54);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profilein .menu .address {
+    border-right: 1px solid rgb(158, 103, 86);
+    background-color: rgb(158, 103, 86);
+    color: white;
+}
+
+
+
+.profilein .pannel {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+.profilein .pannel .addresspannel {
+    width: 100%;
+    padding: 20px;
+}
+
+.profilein .pannel .purchasehispannel {
+    width: 100%;
+    display: none;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.profilein .pannel .purchasehispannel ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(158, 103, 86);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li img {
+    width: 10vw;
+}
+
+
+/* ---------------------------------------------------ADDRESS-------------------------------------------------------- */
+
+
+.checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.checkoutin {
+    width: 100%;
+    margin-bottom: 30vh;
+}
+
+.checkoutin form {
+    display: block;
+    margin-top: 40px;
+    color: rgb(83, 61, 54);
+}
+
+.checkoutin form div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.checkoutin form div span {
+    width: 20%;
+}
+
+.checkoutin input {
+    color: rgb(83, 61, 54);
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    border: 0px;
+    border-bottom: 2px solid rgba(83, 61, 54, 0.418);
+    background-color: transparent;
+    outline: none;
+}
+
+#fname {
+    width: 38%;
+}
+
+#lname {
+    width: 38%;
+}
+
+.checkoutin input:hover {
+    border-bottom: 2px solid rgb(83, 61, 54);
+
+}
+
+.checkoutin textarea {
+    max-width: 80%;
+    min-width: 80%;
+    border: 0px;
+    outline: none;
+    height: 50px;
+    min-height: 50px;
+    background-color: transparent;
+    border-bottom: 2px solid rgba(83, 61, 54, 0.418);
+    padding: 10px;
+}
+
+.checkoutin textarea:hover {
+    border-bottom: 2px solid rgb(83, 61, 54);
+
+}
+
+.logout button {
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+}
+
+button {
+    width: 150px;
+    margin-top: 50px;
+    height: 40px;
+    background-color: #ec5074;
+    border: 0px;
+    cursor: pointer;
+    float: right;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+button:hover {
+
+    background-color: #f33461;
+}
+
+
+
+
+@media only screen and (max-width:912px) {
+    h1 {
+
+        font-size: 5vw;
+    }
+
+    .checkoutin {
+        width: 90%;
+
+    }
+
+    .profilein .pannel .addresspannel {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .profilein {
+        width: 100%;
+
+
+    }
+
+    .profilein .menu {
+        width: 100%;
+        display: flex;
+        padding: 0% 5%;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width:540px) {
+    h1 {
+
+        font-size: 10vw;
+    }
+
+    .checkoutin form div {
+        display: block;
+
+        margin-top: 20px;
+
+    }
+
+    .checkoutin input {
+
+        width: 100%;
+
+    }
+
+    .checkoutin textarea {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    #fname {
+        width: 100%;
+    }
+
+    #lname {
+        width: 100%;
+    }
+
+
+    .row1 {
+        display: block;
+    }
+
+    .allorders {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    .row3 {
+        display: block;
+    }
+
+    .row3 .visa {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+    }
+}

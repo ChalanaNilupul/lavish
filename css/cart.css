@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+body{
+    background-color: #FBF0ED;
+}
+.errorCartcart{
+    margin-top: 2vh;
+    
+}
+.row .delete{
+    position: absolute;
+    right:0px ;
+    top: 30px;
+    background-color: #ec5074;
+    width: 30px;
+}
+
+.errorCartcart{
+    text-align: center;
+   
+   
+    }
+ 
+.errorCartcart img{
+        width:15vw
+}
+.errorCartcart button {
+    width: 60%;
+    height: 30px;
+    border: 0px ;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px; margin-top: 10px;
+    background-color: #ec5074;
+color: #FBF0ED;
+}
+
+
+.clearCart {
+    text-align: right;
+    width: 100%;
+    margin-top: 30px;
+
+}
+
+.clearCart a {
+    color: rgb(83, 61, 54);
+}
+
+.cartMain {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartIn {
+    width: 80%;
+
+
+}
+
+.hero {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-color: #ffc4d2;
+    margin-top: 70px;
+}
+
+.hero h1 {
+    text-align: center;
+    color: rgb(158, 103, 86);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+}
+
+.table {
+    width: 100%;
+    color: rgb(83, 61, 54);
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.table .head {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+.table .head div {
+    padding: 20px 0px;
+
+}
+
+.row {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+}
+
+.short {
+    width: 20%;
+}
+
+.long {
+    width: 40%;
+}
+
+.row div {
+    display: flex;
+
+    grid-template-columns: auto auto;
+
+}
+
+.row div img {
+    width: 6vw;
+}
+
+#product {
+
+    text-align: left;
+
+}
+
+#mobfriendqty {
+    display: flex;
+}
+
+#mobfriendqty button {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+#quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 20px;
+
+}
+
+#remove {
+    width: 50px;
+}
+
+#mobPrice {
+    padding-left: 10px;
+    display: none;
+}
+
+
+
+.checkSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    color: rgb(83, 61, 54);
+}
+
+.checkIn {
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid rgb(158, 103, 86);
+}
+
+.tot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkBTN {
+    text-align: right;
+}
+
+.checkBTN button {
+    width: 25%;
+    height: 30px;
+    border: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #ec5074;
+    color: #FBF0ED;
+}
+
+
+@media only screen and (max-width:1280px) {
+
+
+body{
+    min-height: 100vh;
+}
+}
+
+
+@media only screen and (max-width:767px) {
+
+    .cartIn {
+        width: 90%;
+
+
+    }
+
+    #mobPrice {
+
+        display: block;
+    }
+
+    .row div img {
+        width: 20vw;
+    }
+
+    #mobfriendqty {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #mobRestrict {
+        display: none;
+
+    }
+
+    #mobfriend {
+        width: 100vw;
+
+    }
+
+    .row {
+        justify-content: space-between;
+        font-size: 15px;
+    }
+
+    .head {
+        justify-content: space-between;
+    }
+
+    #quantity {
+
+        width: 60px;
+        height: 20px;
+        margin: 0;
+
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:575px) {
+  
+    
+    .errorCartcart button {
+        width: 80%;
+    }
+     
+    .errorCartcart img{
+            width:25vw
+    }
+    
+    .hero h1 {
+        
+        font-size: 15vw;
+    }
+    .clearCart {
+        text-align: right;
+        width: 100%;
+        margin-top: 30px;
+
+    }
+
+    .checkBTN button {
+        width: 100%;
+
+    }
+
+    .checkIn {
+        width: 90%;
+    }
+
+    #quantity {
+        height: 20px;
+        width: 70px;
+        margin: 0px;
+    }
+    .row div img {
+        width: 20vw;
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+
+    .row {
+        
+        font-size: 12px;
+    }
+    .mobQty{
+        margin-right: 20px;
+       
+    }
+    .errorCartcart{
+        margin-top: 130px;
+    }
+    
+    .errorCartcart button {
+        width: 100%;
+    }
+     
+    .errorCartcart img{
+            width:35vw
+    }
+}
